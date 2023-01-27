@@ -1,0 +1,60 @@
+@import "main";
+$bg-color:yellowgreen;
+$text-font-size: 15px;
+
+body{
+    background-color: $bg-color;
+}
+
+nav{
+    background-color: azure;
+    ul{
+        background-color: aquamarine;
+        li{
+            background-color: burlywood;
+            padding: 10px;
+            margin: 10px;
+            a{
+                color:red;
+                font-size: $text-font-size +10;
+                &:hover{
+                    background-color: $hover-color;
+                    color: $hover-text-color;
+                }
+            }
+        }
+    }
+}
+
+@mixin border-radius{
+    border-radius: 2px*5;
+    background-color: aquamarine;
+    color: red;
+}
+.btn{
+    
+    padding: 10px;
+    color: white;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.btn-ozel{
+    @extend .btn;
+    border: 2px green solid;
+
+}
+
+.btn-ozel2{
+    @extend .btn;
+    border: 2px red solid;
+    @include border-radius;
+}
+
+$sayac: 4;
+@for $i from 1 through $sayac{
+    .sayac#{$i}{
+        border-radius: 4px;
+    }
+}

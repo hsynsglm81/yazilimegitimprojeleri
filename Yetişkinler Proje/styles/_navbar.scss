@@ -1,0 +1,78 @@
+@import "colors";
+@import "media-queries";
+
+%align-center{
+    display: flex;
+    align-items: center;
+}
+
+.navbar{
+    background: $ligth;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    z-index: 10;
+
+    &_logo{
+        color: $dark;
+        cursor: pointer;
+        text-decoration: none;
+        font-size: 2rem;
+        margin-left: 20px;
+        @extend %align-center;
+    }
+
+    &_bars{
+        opacity: 0;
+
+        @include tablet{
+            color: $dark;
+            opacity: 1;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 2rem;
+
+        }
+    }
+
+    &_menu{
+        @extend %align-center;
+        margin-right: 10px;
+
+        @include tablet{
+            display: none;
+        }
+
+        &-links{
+            color: $dark;
+            justify-content: center;
+            text-decoration: none;
+            padding: 0 0.1rem;
+        }
+
+        &:hover {
+            color: $lime;
+            transform: all 0.3s ease;
+        }
+    }
+
+
+    #button {
+        background-color: $lime;
+        border: none;
+        outline: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        color: $ligth;
+        margin-left: 2px;
+
+        &:hover{
+            background-color: $orangeRed;
+            transition: all 0.3s ease;
+        }
+    }
+   
+}

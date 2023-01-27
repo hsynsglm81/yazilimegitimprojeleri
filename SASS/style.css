@@ -1,0 +1,58 @@
+body {
+  background-color: yellowgreen;
+}
+
+nav {
+  background-color: azure;
+}
+nav ul {
+  background-color: aquamarine;
+}
+nav ul li {
+  background-color: burlywood;
+  padding: 10px;
+  margin: 10px;
+}
+nav ul li a {
+  color: red;
+  font-size: 25px;
+}
+nav ul li a:hover {
+  background-color: brown;
+  color: #fff;
+}
+
+.btn, .btn-ozel2, .btn-ozel {
+  padding: 10px;
+  color: white;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btn-ozel {
+  border: 2px green solid;
+}
+
+.btn-ozel2 {
+  border: 2px red solid;
+  border-radius: 10px;
+  background-color: aquamarine;
+  color: red;
+}
+
+.sayac1 {
+  border-radius: 4px;
+}
+
+.sayac2 {
+  border-radius: 4px;
+}
+
+.sayac3 {
+  border-radius: 4px;
+}
+
+.sayac4 {
+  border-radius: 4px;
+}/*# sourceMappingURL=style.css.map */
